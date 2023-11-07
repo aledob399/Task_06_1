@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#4008D8"
+        android:text="EjercicioAndroid2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TableRow>
+
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="400dp"
+            android:layout_height="214dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/azul" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:text="  Nombre"
+            android:textSize="20sp"
+            android:textStyle="bold"
+             />
+    </TableRow>
+    <TableRow android:layout_marginStart="20px">
+
+        <Button
+            android:id="@+id/editar_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#A8A3A3"
+            android:elevation="@dimen/cardview_default_elevation"
+            android:radius="0dp"
+
+            android:shadowColor="#433E3E"
+            android:text="Editar perfil"
+            android:textColor="@color/black" />
+    </TableRow>
+    <TableRow>
+
+        <TableLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/followers"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="50dp"
+                    android:text="Followers"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/following"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="40dp"
+                    android:text="Following"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/estrellita"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="50dp"
+                    android:text="Estrellita"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="106dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="54dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Volver al menu"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </TableRow>
+</TableLayout>
+
